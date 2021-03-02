@@ -4,15 +4,15 @@ const showCircle = (cursor, seconds) => {
   circle.style.position = "fixed";
   circle.style.backgroundColor = "grey";
   circle.style.borderRadius = "50%";
-  circle.style.left = `${cursor.clientX - 16}px`;
-  circle.style.top = `${cursor.clientY - 16}px`;
-  circle.style.height = "32px";
-  circle.style.width = "32px";
+  circle.style.left = `${cursor.clientX - 24}px`;
+  circle.style.top = `${cursor.clientY - 24}px`;
+  circle.style.height = "48px";
+  circle.style.width = "48px";
   circle.style.opacity = 0.8;
   document.body.appendChild(circle);
   setTimeout(() => {
      circle.remove();
-  }, seconds * 1000);
+  }, seconds * 500);
 };
 
 document.addEventListener("touchmove", (event) => {
